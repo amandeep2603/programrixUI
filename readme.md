@@ -1,5 +1,14 @@
-# for installing packages
-> npm install
+# For installing packages
+```npm
 
-# for initailizing file
-> npm run start
+npm install
+
+```
+ 
+# For initailizing file
+
+```npm
+
+npm run dev
+
+```
