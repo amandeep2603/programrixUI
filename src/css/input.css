@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .navbar{
+        @apply flex justify-around items-center bg-gradient-to-tl from-[#3a488b] to-[#212529] p-4 w-screen fixed top-0 left-0;
+    }
+
+    .navbar>h1{
+        @apply font-extrabold text-slate-100  text-2xl; 
+    }
+
+    .nav-links{
+        @apply flex items-center ;
+    }
+
+    .nav-links > li{
+        @apply px-8 py-4 ;
+    }
+
+    .nav-links > li > a{
+        @apply font-semibold text-slate-100;
+    }
+
+    .nav-links > li:last-child >a{
+        @apply text-orange-400 cursor-pointer;
+    }
+
+    .main{
+        @apply h-screen grid place-items-center bg-slate-100;
+    }
+
+    .form{
+        @apply w-96 h-auto flex flex-col gap-2  bg-white px-4 py-8 shadow-xl rounded-lg ;
+    }
+    .form > input{
+        @apply border-gray-300 border px-4 py-2 outline-none text-slate-500; 
+    }
+    .form > h3{
+        @apply font-medium text-slate-500 text-sm;
+    }
+    .form > h3> a{
+        @apply text-green-600 font-semibold;
+    }
+
+    .file{
+        @apply file:px-4 file:py-2 file:bg-slate-100 file:border-0 file:text-slate-500 ;
+    }
+}
