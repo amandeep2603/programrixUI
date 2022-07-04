@@ -1,5 +1,5 @@
 # for installing packages
-## npm install
+> npm install
 
 # for initailizing file
-## npm run start
+> npm run start
